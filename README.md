@@ -1,10 +1,16 @@
 # Visual designer portfolio [![Template Project](https://img.shields.io/badge/Technologies%20-HTML%2FCSS-brightgreen)](http://www.gnu.org/licenses/agpl-3.0)
 
-This is a portfolio website of visual designer which contains detailed information about his work.
+This is a portfolio website of visual designer which contains detailed information about his work. I made this website mobile responsive.
 
-## Preview
+## Technology Used
+- HTML5
+- CSS3
 
-![Your justice ](./Project-15.png)
+## 1. Laptop screen demo
+![desktop ](./Project-15.png)
+
+## 2. Mobile screen demo
+   ![mobile ](./Mobile.png)
 
 ## Author
 
@@ -18,7 +24,7 @@ This is a portfolio website of visual designer which contains detailed informati
 
 ## What I have learnt in this project
 
-I learn how to make responsive website using flex-wrap. and also aligning different components.
+I learn how to make responsive website using flex-wrap and media query. and also aligning different components.
 
 ## Honest Time to finish the project
 

@@ -13,23 +13,16 @@ body {
   overflow-x: hidden;
 }
 
-.container {
-  margin: 0 15%;
-}
-
 .logo {
   width: 80px;
-  /* margin: 5%; */
-  position: absolute;
-  left: 100px;
-  top: 40px;
   color: #C91B28;
 }
 
 .nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   margin-top: 40px;
-  margin-right: 15%;
-  float: right;
   color: #fff;
 }
 
@@ -45,6 +38,12 @@ nav ul li {
   margin-left: 60px;
 }
 
+.menu-item {
+  display: none;
+  color: #fff;
+  font-size: 2rem;
+}
+
 .drop::after {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -58,8 +57,8 @@ nav ul li {
   margin-top: 20px;
   width: 100vw;
   display: flex;
-  /* justify-content: space-around; */
-  /* align-items: center; */
+  flex-direction: row;
+  align-items: center;
 }
 
 .arthur-img {
@@ -68,7 +67,6 @@ nav ul li {
 }
 
 .content {
-  /* float: right; */
   margin-top: 150px;
 }
 
@@ -76,6 +74,7 @@ nav ul li {
   color: #C91B28 !important;
   text-transform: capitalize;
   font-weight: 600;
+  font-size: 2rem;
 }
 
 .post {
@@ -89,6 +88,7 @@ nav ul li {
   font-weight: 200;
   margin-top: 10px;
   font-family: 'open sans';
+  width: 60%;
 }
 
 .btn {
@@ -112,7 +112,6 @@ nav ul li {
   position: absolute;
   top: 570px;
   z-index: -1;
-
 }
 
 .skills {
@@ -121,12 +120,12 @@ nav ul li {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
-  margin: 90px 150px;
+  margin: 90px 30px;
+  gap: 20px;
 }
 
 .skill {
   background-color: #212121;
-  margin: 0 10px;
   padding: 40px;
 }
 
@@ -171,7 +170,8 @@ nav ul li {
   margin: 0 150px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 100px;
   align-items: center;
   text-align: center;
 }
@@ -181,7 +181,8 @@ nav ul li {
 }
 
 .exp-count {
-  margin-left: 100px;
+  /* margin-left: 100px; */
+  /* margin: 0 100px; */
 }
 
 .exp-count h1 {
@@ -298,9 +299,9 @@ nav ul li {
   color: #fff;
   margin: 80px 200px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding: 50px 0;
+  padding: 50px;
 }
 
 .w-head h1 {
@@ -310,28 +311,135 @@ nav ul li {
 .w-head p {
   font-size: 14px;
   font-weight: 200;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 
 .bottom-nav pre {
   color: #fff;
   text-transform: uppercase;
   font-size: 10px;
-  margin-left: 540px;
+  margin-left: 40%;
   padding: 20px;
 }
 
 .footer {
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
   background-color: #212121;
-  padding: 20px 200px;
-}
-
-.footer div:nth-child(2) {
-  padding-left: 350px;
+  padding: 20px 0px;
 }
 
 .fa-brands {
   color: #fff;
   margin-right: 30px;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width:480px) {
+  .nav-items {
+    display: none;
+  }
+
+  .nav {
+    justify-content: space-between;
+  }
+
+  .logo {
+    width: 120px;
+    margin-left: 50px;
+  }
+
+  .menu-item {
+    display: inline;
+  }
+
+  .profile img {
+    width: 50%;
+  }
+
+  .about {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    margin: 0;
+  }
+
+  .about .content {
+    margin: 30px;
+    text-align: center;
+  }
+
+  .post {
+    font-size: 2.5rem;
+  }
+
+  .content p.description {
+    width: 100%;
+  }
+
+  .skills {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .skill {
+    width: 100%;
+    /* text-align: center; */
+  }
+
+  .experience {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .exp-details {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .feature {
+    margin: 0;
+  }
+
+  .feature-head {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+
+  .projects div {
+    margin-bottom: 50px;
+  }
+
+  .work {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    margin: 0 50px;
+    margin-bottom: 50px;
+  }
+
+  .w-head h1 {
+    font-size: 2rem;
+  }
+
+  .projects div img {
+    width: 300px;
+  }
+
+  .bottom-nav pre {
+    margin: 0;
+  }
+
+  .social-icons {
+    display: flex;
+    flex-direction: row;
+  }
+
 }

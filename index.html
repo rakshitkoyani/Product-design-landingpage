@@ -6,17 +6,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <!-- font awesome cdn -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
     integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- favicon -->
   <title>Visual Designer</title>
 </head>
 
 <body>
-  <img src="./assets/logo.png" alt="logo" srcset="" class="logo">
   <section class="header">
     <nav class="nav">
+      <img src="./assets/logo.png" alt="logo" srcset="" class="logo">
       <ul class="nav-items">
         <li class="item drop">Home</li>
         <li class="item">product</li>
@@ -24,20 +25,22 @@
         <li class="item">Contact</li>
         <li class="item drop">other page</li>
       </ul>
+      <div class="menu-item">
+        <i class="fas fa-bars"></i>
+      </div>
     </nav>
 
     <div class="about">
-
       <div class="profile">
         <img src="./assets/1.png" alt="arthur" class="arthur-img">
       </div>
       <div class="content">
         <p class="name">hello i'm arthur</p>
         <h1 class="post">visual designer</h1>
-        <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br>Ratione a temporibus
+        <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione a temporibus
           reiciendis
           et
-          tempora facilis cupiditate <br>facere molestiae laudantium consequatur.</p>
+          tempora facilis cupiditate facere molestiae laudantium consequatur.</p>
         <button class="btn btn-group">about me</button>
       </div>
     </div>
@@ -124,27 +127,26 @@
     </div>
   </div>
 
-  <div class="work">
-    <div class="w-head">
-      <h1>Let's work together on <br>your next project</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab doloremque minima,<br> dolore quod expedita
-        nostrum!
-      </p>
-    </div>
-    <div class="work-btn">
-      <button class="btn-group">contact</button>
+  <div class="work-wrapper">
+    <div class="work">
+      <div class="w-head">
+        <h1>Let's work together on your next project</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab doloremque minima, dolore quod expedita
+          nostrum!
+        </p>
+      </div>
+      <div class="work-btn">
+        <button class="btn-group">contact</button>
+      </div>
     </div>
   </div>
   <div class="bottom-nav">
-
     <pre> home             about             product             contact</pre>
-
-
   </div>
 
   <section class="footer">
     <div><img src="./assets/logo.png" alt="logo" width="80px"></div>
-    <div>
+    <div class="social-icons">
       <i class="fa-brands fa-facebook" aria-hidden="true"></i>
       <i class="fa-brands fa-twitter" aria-hidden="true"></i>
       <i class="fa-brands fa-youtube" aria-hidden="true"></i>
